@@ -32,7 +32,7 @@ typedef struct {
 /**********************
  *  STATIC PROTOTYPES
  **********************/
-static void ili9341_set_orientation(uint8_t orientation);
+//static void ili9341_set_orientation(uint8_t orientation);
 
 static void ili9341_send_cmd(uint8_t cmd);
 static void ili9341_send_data(void * data, uint16_t length);
@@ -216,7 +216,7 @@ static void ili9341_send_color(void * data, uint16_t length)
     disp_spi_send_colors(data, length);
 }
 
-static void ili9341_set_orientation(uint8_t orientation)
+void ili9341_set_orientation(uint8_t orientation)
 {
     // ESP_ASSERT(orientation < 4);
 

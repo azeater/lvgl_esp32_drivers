@@ -233,7 +233,7 @@ bool lvgl_spi_driver_init(int host,
 
     ESP_LOGI(TAG, "Initializing SPI bus...");
     esp_err_t ret = spi_bus_initialize(host, &buscfg, dma_channel);
-    assert(ret == ESP_OK);
+    //assert(ret == ESP_OK);
 
     return ESP_OK != ret;
 }
